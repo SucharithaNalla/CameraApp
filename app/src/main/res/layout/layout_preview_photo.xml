@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ccffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/_300sdp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <Button android:id="@+id/btn_cancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Cancel"
+                android:textColor="#fff"
+                android:background="#FF5252"/>
+
+            <Button android:id="@+id/btn_ok"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="SAVE"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="#1DE9B6"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
